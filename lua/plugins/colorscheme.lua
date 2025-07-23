@@ -1,9 +1,11 @@
 return {
-  "AlexvZyl/nordic.nvim",
-  name = "nordic",
-  lazy = false,
-  priority = 1000,
+  "rose-pine/neovim",
+  name = "rose-pine",
   config = function()
-    require("nordic").load()
+    require("rose-pine").setup({
+      styles = {
+        transparency = false,
+      },
+    })
   end,
 }
